@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@giapnv/eslint-plugin": ["libs/eslint-plugin/src/index.ts"]
+      "@giapnv/eslint-plugin": ["libs/eslint-plugin/src/index.ts"],
+      "@giapnv/ng-supabase": ["libs/ng-supabase/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
