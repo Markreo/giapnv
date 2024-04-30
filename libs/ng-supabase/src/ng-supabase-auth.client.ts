@@ -1,5 +1,3 @@
-import {SupabaseAuthClient} from '@supabase/supabase-js/dist/main/lib/SupabaseAuthClient';
+import { SupabaseAuthClient } from '@supabase/supabase-js/dist/main/lib/SupabaseAuthClient';
 
-export class NgSupabaseAuthClient extends SupabaseAuthClient {
-
-}
+export class NgSupabaseAuthClient extends SupabaseAuthClient {}

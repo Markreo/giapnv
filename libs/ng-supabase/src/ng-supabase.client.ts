@@ -1,6 +1,3 @@
-import {SupabaseClient} from "@supabase/supabase-js";
-import { ImplementDatabase } from './type';
+import { SupabaseClient } from '@supabase/supabase-js';
 
-
-export class NgSupabaseClient extends SupabaseClient<ImplementDatabase> {
-}
+export class NgSupabaseClient extends SupabaseClient {}

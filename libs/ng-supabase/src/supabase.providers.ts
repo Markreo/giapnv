@@ -7,20 +7,17 @@ import { NgSupabaseClient } from './ng-supabase.client';
 export const SupabaseProviders = (config: SupabaseConfig): Provider[] => [
   {
     provide: SUPABASE_CONFIG,
-    useValue: config
+    useValue: config,
   },
   {
     provide: NgSupabaseClient,
-    useFactory: (config: SupabaseConfig) => createClient(config.supabaseUrl, config.supabaseKey),
-    deps: [
-      SUPABASE_CONFIG
-    ]
+    useFactory: (config: SupabaseConfig) =>
+      createClient(config.supabaseUrl, config.supabaseKey),
+    deps: [SUPABASE_CONFIG],
   },
   {
     provide: NgSupabaseAuthClient,
     useFactory: (ngSupabaseClient: NgSupabaseClient) => ngSupabaseClient.auth,
-    deps: [
-      NgSupabaseClient
-    ]
-  }
+    deps: [NgSupabaseClient],
+  },
 ];
